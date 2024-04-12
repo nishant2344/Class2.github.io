@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: ghostwhite;
+        }
+         form{
+            width:400px;
+            height:220px;
+            background-color: rgb(168, 168, 158);
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px  rgb(108, 106, 106);
+            text-align: center;
+        }
+        label{
+        font-size: 20px;
+         font-weight: bold;
+         text-decoration: underline;
+        }
+        input{
+            border: transparent;
+            border-radius: 5px;
+        }
+        button{
+            background-color: rgb(69, 112, 114);
+            border: transparent;
+            color:white
+        }
+        #form_container{
+            display: flex;
+            width: 200px; /* Set the width of the div */
+  height: 250px; /* Set the height of the div */
+  background-color: #141414; /* Set the background color of the div */
+  border: 1px solid #0d0c0c; /* Set the border of the div */
+  border-radius: 5px; /* Set the border radius of the div */
+  padding: 20px; /* Set the padding of the div */
+  text-align: absolute; /* Center the text inside the div */
+  position: absolute; /* Position the div absolutely */
+  top: 50%; /* Move the div down 50% of the page */
+  left: 50%; /* Move the div to the right 50% of the page */
+  transform: translate(-50%, -50%); /* Move the div back up and to the left by half its width and height */
+  box-shadow: 5px 5px 5px 5cap rgba(11, 10, 10, 0.2); /* Add a shadow to the div */
+}
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="form_container">
+    <form name="Log in" id="form">
+        Name : <input type="text" placeholder="Name"><br><br>
+        Email id : <input type="text" placeholder="Enter email id" name="email"><br><br>
+        Password : <input type="password" placeholder="Enter password" name="pass"><br><br>
+        Confirm Password : <input type="password" placeholder="Confirm password"><br><br><br>
+        <button id="button" onclick="change()"> Submit</button>
+        <button id="button" onclick="resetForm()" > Reset </button> 
+    </form>
+</div>
+    <script>
+        function change(){
+            document.getElementById("form").innerHTML="thank you for login"
+            form.style.paddingTop="70px"
+            form.style.color="red"
+        }
+        function resetForm() {
+            document.getElementById('form').reset();
+        }
+    </script>
+</body>
+</html>
